@@ -24,11 +24,11 @@ let array3 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 var arrayEven: [Int] = []
 var arrayOdd: [Int] = []
 
-for i in 0..<array3.count {
-    if array3[i] % 2 == 0 {
-        arrayEven.append(array3[i])
+for number in array3 {
+    if number % 2 == 0 {
+        arrayEven.append(number)
     } else {
-        arrayOdd.append(array3[i])
+        arrayOdd.append(number)
     }
 }
 print("Even numbers are: \(arrayEven), Odd numbers are: \(arrayOdd) ")
@@ -38,9 +38,9 @@ print("")
 let array4 = [3.14, 678.567, 23432.56, 45.1, 67, 6868]
 var largestNumber = array4[0]
 
-for i in 0..<array4.count {
-    if array4[i] > largestNumber {
-        largestNumber = array4[i]
+for number in array4 {
+    if number > largestNumber {
+        largestNumber = number
     }
 }
 print("Largest number in this array is: \(largestNumber)")
